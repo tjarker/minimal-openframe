@@ -125,6 +125,8 @@ module openframe_project_wrapper (
 	/* will not be handled in the picosoc module.  Tie	*/
 	/* each one of them off to the local loopback zero bit.	*/
 
+    assign gpio_oeb = {gpio_loopback_zero[`OPENFRAME_IO_PADS-1:2], gpio_loopback_one[1:0]};
+
 	assign gpio_analog_en = gpio_loopback_zero;
 	assign gpio_analog_pol = gpio_loopback_zero;
 	assign gpio_analog_sel = gpio_loopback_zero;
