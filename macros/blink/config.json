@@ -1,0 +1,11 @@
+{
+  "DESIGN_NAME": "blink",
+  "VERILOG_FILES": [
+    "dir::../../src/verilog/blink.sv"
+  ],
+  "CLOCK_PORT": "clock",
+  "CLOCK_PERIOD": 1.0,
+  "FP_CORE_UTIL": 0.1,
+  "FP_PDB_MULTILAYER": true,
+  "FP_PDN_CORE_RING": 1
+}
